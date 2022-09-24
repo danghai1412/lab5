@@ -7,10 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <ol>
+    <table border="1">
+      <tr>
+        <th>Mobile Brand</th>
+      </tr>
       {{#each mobiles}}
-        <li>{{this}}</li>
+        <tr>
+          <td>{{this}}</td>
+        </tr>
       {{/each}}
-    </ol>
+    </table>
 </body>
 </html>

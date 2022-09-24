@@ -22,7 +22,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/mobile", (req, res) => {
-  res.render("mobile");
+  var list = ["iPhone", "Samsung", "Oppo", "Huawei"];
+  res.render("mobile", { mobiles: list });
 });
 
 app.get("/laptop", (req, res) => {
